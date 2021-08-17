@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deshBankHome</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-400 via-red-300 to-green-200 ">
+   <header> <h1 class=" text-4xl text-center font-medium mt-4"> <span class="text-green-600">Home</span>Bank</h1></header>
+   <header> <h1 class=" text-4xl text-center font-medium mb-2">Save your Money</h1></header>
+   <main class="w-3/4 mx-auto ">
+       <!-- balance and tranjectun -->
+       <section>
+            <div class="md:grid grid-cols-3 gap-4 " >
+              <div class="bg-blue-300 px-8 py-4 rounded-lg my-2">
+                    <h3 class=" text-white text-3xl font-medium">Deposit</h3>
+                    <h2 class="text-white text-2xl font-medium">$<span id="deposite-money">00</span></h2>
+              </div>
+              <div class="bg-red-500 px-8 py-4 rounded-lg my-2">
+                    <h3 class=" text-white text-3xl font-medium">Withdraw</h3>
+                    <h2 class="text- white text-2xl font-medium">$<span id="withdraw-money">00</span></h2>
+              </div>
+              <div class="bg-green-600 px-8 py-4 rounded-lg my-2">
+                    <h3 class=" text-white text-3xl font-medium">Balance</h3>
+                    <h2 class="text-white text-2xl font-medium">$<span id="balance-money">00</span></h2>
+              </div>
+            </div>
+       </section>
+       <section >
+            <div class="grid grid-cols-2 gap-4 my-4">
+                <div class="bg-purple-300 p-2 rounded-lg">
+                    <h4 class="text-xl font-medium ">Deposite Your money</h4>
+                    <input id="deposit-fld" class="block w-full p-1 border-2 border-red-100 mx-auto mt-4" type="number" placeholder="$ amount you want to deposite">
+                    <button id="deposit-btn" class="block my-2 bg-red-100 px-4 py-1 rounded-lg font-medium ">Deposit</button>
+                </div>
+                <div class="bg-green-300 p-2 rounded-lg">
+                    <h4 class="text-xl font-medium ">Withdraw Your money</h4>
+                    <input id="withdraw-fld" class="block w-full p-1 border-2 border-red-100 mx-auto mt-4" type="number" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn" class="block my-2 bg-red-100 px-4 py-1 rounded-lg font-medium ">Withdraw</button>
+                </div>
+               
+            </div>
+       </section>
+   </main>
+   <script src="js/custom.JS"></script>
+</body>
+</html>
