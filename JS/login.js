@@ -10,7 +10,7 @@ loginBtn.addEventListener('click',function(event){
     const userMail = inputField('email-fld');
     const userPassword = inputField('pass-fld');
    if(userMail == 'mybank@gmail.com' && userPassword =='bank123'){
-    window.location.href = 'deshbank.html';
+    window.location.href = 'deshboard.html';
    }
    else{
        alert('Incorrect Password');
